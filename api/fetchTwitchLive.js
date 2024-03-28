@@ -53,7 +53,7 @@ export default async (req, res) => {
     'pages',
     'index',
     'components',
-    'playerList.json'
+    'playerListOUO.json'
   );
   const jsonString = readFileSync(file, 'utf8');
   const playerList = JSON.parse(jsonString);

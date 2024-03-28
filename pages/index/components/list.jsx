@@ -46,8 +46,8 @@ function List() {
             <ul className='flex w-2/3 items-center'>
               {members.map((member, memberIndex) => (
                 <li key={memberIndex} className="text-left m-[1vh] p-2 rounded-md h-[20vh] flex flex-col items-center w-[100%] leading-5">
-                  <div>
-                    <div className="text-2xl font-bold leading-5 ">{member.summonerName}</div>
+                  <div className='flex flex-col items-center'>
+                    <div className="text-2xl font-bold leading-5 p-1 m-1">{member.summonerName}</div>
                     <div className={liveStreamers.includes(`${member.twitchId}`) ? 'visible' : 'invisible'}>
                       <a href={`https://www.twitch.tv/${member.twitchId}`} target="_blank" rel="noopener noreferrer">
                         <button className='animate-heartbeat bg-red-500 text-white font-bold border-none rounded-sm m-1 p-[1px_3px] cursor-pointer shadow-btn-3d'>LIVE</button>
