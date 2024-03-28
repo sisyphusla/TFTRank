@@ -9,9 +9,9 @@ function Page() {
 }
 
 export const documentProps = {
-  title: 'TFT S10台服城邦衝分賽',
-  description: "S10台服聯盟戰棋城邦衝分賽，總共分為五組，，由花輪同學、圖奇奶王 綠茶、Ignorant老王、天晴Haruru、絕世拿鐵五位隊長領軍。比賽宗旨單純讓大家多打Rank，多討論交流，以便資格賽有更好的發揮。",
-  keywords: "TFT,戰棋,SET10,英雄聯盟戰棋 ",
+  title: 'S11巴豆龍盃衝分賽',
+  description: "本次比賽為非官方舉辦之台服聯盟戰棋S11季初衝分賽。旨在提供各方好手競技舞台，活絡社群競賽風氣，培養觀賽群眾。同時也藉機宣傳最可愛棋手巴豆龍，打造台服巴豆龍教。",
+  keywords: "TFT,戰棋,SET11,英雄聯盟戰棋 ",
   ogUrl: "https://tftrank.vercel.app/",
   ogImgUrl: "https://tftog.vercel.app/api/og",
 

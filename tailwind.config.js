@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/pages/index/assets/set10.webp')",
+        'hero-pattern': "url('/pages/index/assets/set11.webp')",
       },
       boxShadow: {
         '3d': '-3px -3px 5px rgba(0, 0, 0, 0.6), inset -1px -1px 10px rgba(0, 0, 0, 0.5)',

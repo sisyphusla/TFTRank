@@ -7,11 +7,11 @@
     padding: 0 40px;
   }
 
-  @media (min-width: 1400px) { // 桌面尺寸
-    // max-width: 1140px;
-    margin: auto;
-    padding: 0; // 在大屏幕上移除邊距
-  }
+  // @media (min-width: 1460px) { // 桌面尺寸
+  //   // max-width: 1140px;
+  //   margin: auto;
+  //   padding: 0; // 在大屏幕上移除邊距
+  // }
 
   .tabs {
     display: flex;

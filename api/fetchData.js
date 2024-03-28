@@ -26,7 +26,7 @@ export default async (req, res) => {
     'pages',
     'index',
     'components',
-    'playerList.json'
+    'playerListOUO.json'
   );
   const jsonString = readFileSync(file, 'utf8');
   const playerList = JSON.parse(jsonString);
@@ -70,8 +70,7 @@ export default async (req, res) => {
             )
             .then((response) => {
               let summonerInfo = {
-                summonerName: player.name, // 從playerList.json中獲得
-                nickName: player.nickName,
+                summonerName: player.gameName, // 從playerList.json中獲得
                 tier: 'N/A',
                 leaguePoints: 'N/A',
                 twitchId: player.twitchId,
@@ -84,7 +83,7 @@ export default async (req, res) => {
                   data.find((entry) => entry.queueType === 'RANKED_TFT') || {};
                 summonerInfo = {
                   ...summonerInfo,
-                  summonerName: tftEntry.summonerName || player.name,
+                  summonerName: tftEntry.summonerName || player.gameName,
                   tier: tftEntry.tier || 'N/A',
                   leaguePoints: tftEntry.leaguePoints,
                 };
@@ -104,8 +103,7 @@ export default async (req, res) => {
                 error
               );
               allSummonerInfo[team][i] = {
-                summonerName: player.name,
-                nickName: player.nickName,
+                summonerName: player.gameName,
                 tier: 'N/A',
                 leaguePoints: 'N/A',
                 twitchId: player.twitchId,

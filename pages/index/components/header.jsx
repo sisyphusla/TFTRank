@@ -8,9 +8,9 @@ function Header() {
 
 
   return (
-    <div className='header font-bold text-4xl m-5'>
+    <div className='header font-bold text-5xl m-5'>
       <h1 className='text-[#c6d9ec]' style={style}>
-        台服S10分組衝分賽
+        S11巴豆龍杯衝分賽
       </h1>
     </div>
   );

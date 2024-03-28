@@ -9,10 +9,10 @@ function App() {
 
 
   return (
-    <div className="app bg-hero-pattern bg-contain bg-image-opacity">
+    <div className="app bg-hero-pattern bg-cover bg-no-repeat bg-fixed bg-image-opacity">
       <Header />
       <TabsComponent />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
